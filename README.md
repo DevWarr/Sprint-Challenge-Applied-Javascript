@@ -32,20 +32,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+DOM = Document Object Model. In using the name to describe it, the DOM is a model that browsers use to display an HTML document, treating each portion of HTML as an object.
+
+Browsers create a Document Object Model for each webpage that branches out similarly to how its HTML file branches. The document is at the head of the model, branching out first to the `<html>` tag. Anytime the HTML file has a new identifier(a tag, class, id, etc), a new object is created in the DOM, and each time the HTML has a new indentation, a new branch is created.
+
+This model is useful for developers because Javascript can use the DOM to select specific pieces within the HTML document. After selecting these specific pieces, we can then manipulate them by adding animations, creating changeable styles, and linking various events to them.
+
+
 2. What is an event?
+
+An event is a specific action(a user clicking or a webpage fully loading) that a program can recognize. With Javascript, we have a large number of pre-set events that we can link to different function or bits of code: See question 3 below.
+
 
 3. What is an event listener?
 
+Event listeners are a way for us to tell our Javascript code to detect an event when it happens. Once the event is detected, we can then call a function, or run any number of lines of code. For example, We can add an event listener to a button. This listener with listen for a `'click'` event. If the user clicks on this specific button, the program will run a code that opens up a dropdown menu.
+
+
 4. Why would we convert a NodeList into an Array?
+
+NodeLists are array-like, but they do not have full array functionality. NodeLists have index values, a `.length` property, and can utilize the `.forEach()` method just like arrays. However, if we want to use array methods ilke `.filter()`, `.map()` or the like, we must first convert the list into an Array.
+
 
 5. What is a component?
 
+As programmers, we always want to save time and save lines of code. Web components allow us to save time and code by creating reusable, customizable elements. When we write HTML, we need to type out each `<div>` tag and text, each `<h1>` tag and text, and so on. When we type our JS code, however, we can use components to auto-create objects associated with these different tags and classes. In the same way functions allow us to define reusable code, components allow us to use this reusable code with the DOM to create our elements.
+
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
