@@ -9,6 +9,10 @@
   @media(min-width: 1280px){
     width: 1280px;
   }
+  @media(max-width: 800px){
+    margin-top: 64px;
+    flex-wrap: wrap;
+  }
   h1 {
     font-size: 60px;
     font-family: Didot, serif;
@@ -16,20 +20,40 @@
     flex: 8;
     text-align: center;
     color: @lambda-times-color-black;
+    @media(max-width: 800px){
+      flex: auto;
+      width: 80%;
+      order: 1;
+      margin: 0;
+    }
   }
   span {
     align-self: flex-end;
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
+    @media(max-width: 800px){
+      width: 40%;
+      order: 2;
+      text-align: center;
+      font-size: 16px;
+    }
   }
   .date {
     margin-left: 25px;
     flex: 1;
+    @media(max-width: 800px){
+      flex: auto;
+      margin-left: 40px;
+    }
   }
   .temp {
     text-align: right;
     margin-right: 25px;
     flex: 1;
+    @media(max-width: 800px){
+      flex: auto;
+      text-align: center;
+    }
   }
 }
