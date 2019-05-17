@@ -1,3 +1,8 @@
+// This needs to be at the top of the html:
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+// For GSAP animations
+
+
 
 //============================ANIMATIONS============================//
 
