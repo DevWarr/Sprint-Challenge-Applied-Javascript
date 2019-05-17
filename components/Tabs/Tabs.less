@@ -7,12 +7,24 @@
   @media(min-width: 1280px){
     width: 1280px;
   }
+  @media(max-width: 800px){
+    min-height: 80px;
+    height: auto;
+  }
   .topics {
     .flex(none, center);
+    @media(max-width: 800px){
+      .flex(center, center);
+      flex-wrap: wrap;
+    }
     .title {
       font-size: 12px;
       letter-spacing: 1px;
       font-weight: bold;
+      @media(max-width: 800px){
+        width: 100%;
+        text-align: center;
+      }
     }
     .tab {
       .flex(none, center);
@@ -26,6 +38,13 @@
       font-weight: bold;
       &:hover {
         text-decoration: underline;
+      }
+      @media(max-width: 800px){
+        width: 85%;
+        .flex(center, center);
+        padding: 7px 0;
+        margin: 3px 0;
+        border-radius: 10px;
       }
     }
     .active-tab {

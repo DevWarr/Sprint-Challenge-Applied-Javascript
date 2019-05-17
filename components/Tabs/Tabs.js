@@ -74,3 +74,14 @@ class TabCard {
 
 */
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+
+
+
+
+//============================EXTRA===========================//
+
+// The date was incorrect, so here's a JS bit that will update the date depending on the day!
+
+const date = document.querySelector(".date");
+const dateInfo = {month: "long", day: "numeric", year: "numeric"};
+date.textContent = new Date().toLocaleDateString("en-US", dateInfo);

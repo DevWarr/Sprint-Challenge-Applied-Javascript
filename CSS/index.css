@@ -168,16 +168,37 @@ body {
     width: 1280px;
   }
 }
+@media (max-width: 800px) {
+  .tabs {
+    min-height: 80px;
+    height: auto;
+  }
+}
 .tabs .topics {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  .tabs .topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .tabs .topics .title {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .tabs .topics .title {
+    width: 100%;
+    text-align: center;
+  }
 }
 .tabs .topics .tab {
   display: flex;
@@ -196,6 +217,18 @@ body {
 .tabs .topics .tab:hover {
   text-decoration: underline;
 }
+@media (max-width: 800px) {
+  .tabs .topics .tab {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 7px 0;
+    margin: 3px 0;
+    border-radius: 10px;
+  }
+}
 .tabs .topics .active-tab {
   background-color: #fff;
   color: #333;
@@ -208,7 +241,7 @@ body {
   flex-direction: row;
   width: 100%;
   margin-top: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
