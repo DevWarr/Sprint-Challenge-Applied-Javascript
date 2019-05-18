@@ -3,12 +3,15 @@
 
 <head>
   <title>Lambda Times</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+  <script src="./components/Carousel/Carousel.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
 </head>
 
 <body>
@@ -50,14 +53,14 @@
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
+  <div class="carousel">
     <div class="left-button"><</div>
     <img src="./assets/carousel/mountains.jpeg" />
     <img src="./assets/carousel/computer.jpeg" />
     <img src="./assets/carousel/trees.jpeg" />
     <img src="./assets/carousel/turntable.jpeg" />
     <div class="right-button">></div>
-  </div> -->
+  </div>
 
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
@@ -80,6 +83,16 @@
           <img src="./assets/bones.jpg" />
         </div>
         <span>By BONES R. LIFE</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">Why you should learn to Dominate the DOM</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/bones.jpg" />
+        </div>
+        <span>By DEV . WARR</span>
       </div>
     </div>
 
@@ -143,6 +156,16 @@
       </div>
     </div>
 
+    <div class="card" data-tab="bootstrap">
+      <div class="headline">Strap in, because we're going off script!</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By DEV . WARR</span>
+      </div>
+    </div>
+
     <div class="card" data-tab="jquery">
       <div class="headline">jQuery Animations: When and Where to Use Them, and Not CSS</div>
       <div class="author">
@@ -190,6 +213,16 @@
           <img src="./assets/max.jpg" />
         </div>
         <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="technology">
+      <div class="headline">Deep faking: Did fake news get even faker?</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By DEV . WARR</span>
       </div>
     </div>
 
